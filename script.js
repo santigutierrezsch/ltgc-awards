@@ -168,7 +168,7 @@ function renderKnownForBoard() {
   cardLabel.textContent = "Most Known For";
   awardProgress.textContent = "Final Section";
   awardTitle.textContent = "What is everyone most known for?";
-  awardNote.textContent = "Tap a card to flip it and reveal the three things.";
+  awardNote.textContent = "Tap a card to flip it and reveal what people say about them.";
   revealButton.classList.add("hidden");
   nextButton.classList.add("hidden");
 
@@ -181,7 +181,7 @@ function renderKnownForBoard() {
               <div class="known-card-inner">
                 <div class="known-face known-front">
                   <h3 class="known-name">${person.name}</h3>
-                  <p class="known-prompt">Tap to reveal</p>
+                  <p class="known-prompt"></p>
                 </div>
                 <div class="known-face known-back">
                   <h3 class="known-name">${person.name}</h3>
