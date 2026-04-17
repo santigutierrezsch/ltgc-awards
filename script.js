@@ -170,7 +170,8 @@ function renderKnownForBoard() {
   awardTitle.textContent = "What is everyone most known for?";
   awardNote.textContent = "Tap a card to flip it and reveal what people say about them.";
   revealButton.classList.add("hidden");
-  nextButton.classList.add("hidden");
+  nextButton.textContent = "Recap";
+  nextButton.classList.remove("hidden");
 
   winnerStage.innerHTML = `
     <div class="known-board" id="known-board">
@@ -275,7 +276,14 @@ startButton.addEventListener("click", () => {
 });
 
 revealButton.addEventListener("click", revealCurrentAward);
-nextButton.addEventListener("click", goNext);
+nextButton.addEventListener("click", () => {
+  if (showingKnownFor) {
+    window.location.href = "/summary";
+    return;
+  }
+
+  goNext();
+});
 document.addEventListener("keydown", handleKeyboard);
 
 showHome();
