@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First Annual LTGC Award Show</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <section class="hero-panel view" id="home-section">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="label">SGGames Presents: First Annual</p>
+        <h1>LTGC Award Show</h1>
+        <div class="hero-actions">
+          <button class="btn btn-primary" id="start-show">Start</button>
+        </div>
+      </div>
+    </section>
+
+    <main class="show-view view hidden" id="show-section">
+      <div class="show-header">
+        <div class="award-progress" id="award-progress">Award 1 of 1</div>
+      </div>
+
+      <section class="award-card" id="award-card">
+        <span class="section-label" id="card-label">Current Award</span>
+        <div class="award-title" id="award-title">Who&apos;s the...</div>
+        <div class="award-note" id="award-note">Click reveal when everyone is ready.</div>
+        <div class="winner-stage" id="winner-stage"></div>
+        <div class="award-actions">
+          <button class="btn btn-outline" id="reveal-winner">Reveal</button>
+          <button class="btn btn-primary hidden" id="next-award">Next Award</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
